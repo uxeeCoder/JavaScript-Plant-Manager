@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Plant Care for Beginners</h1>
+      <p>
+        This is a simple plant manager for beginners. It will help you to keep
+        track of your plants and their needs.
+      </p>
+    </header>
+
+    <main>
+      <div>
+        <form id="plantForm" >
+            <!-- onsubmit="clearForm()" -->
+          <label for="name">
+            Plant Name
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Plant Name"
+              aria-placeholder="Plant Name"
+              required
+            />
+          </label>
+
+          <label for="species">
+            Plant species
+            <input
+              type="text"
+              name="species"
+              placeholder="Plant species"
+              aria-placeholder="Plant species"
+              required
+            />
+          </label>
+
+          <label for="water">
+            Water Schedule
+            <input
+              type="text"
+              name="water"
+              placeholder="Water Schedule"
+              aria-placeholder="Water Schedule"
+              required
+            />
+          </label>
+          <button>Add New Plant</button>
+        </form>
+    </div>
+    
+    <div>
+        <ul id="plantList"></ul>
+        <!-- <button>Remove Plant</button> -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
